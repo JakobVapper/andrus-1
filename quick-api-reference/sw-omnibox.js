@@ -4,12 +4,12 @@ console.log("sw-omnibox.js");
 chrome.runtime.onInstalled.addListener(({ reason }) => {
     if (reason === 'install') {
       chrome.storage.local.set({
-        apiSuggestions: ['tabs', 'storage', 'scripting']
+        apiSuggestions: ['tallinn', 'tartu', 'kuressaare']
       });
     }
 });
 
-const URL_CHROME_EXTENSIONS_DOC = 'https://developer.chrome.com/docs/extensions/reference/';
+const URL_CHROME_EXTENSIONS_DOC = 'https://ilm.ee/';
 const NUMBER_OF_PREVIOUS_SEARCHES = 4;
 
 // Display the suggestions after user starts typing
